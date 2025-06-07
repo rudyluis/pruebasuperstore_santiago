@@ -15,7 +15,7 @@ class Usuario(Base):
 
 # El modelo de SuperstoreSale tal cual está en tu base de datos
 class SuperstoreSale(Base):
-    __tablename__ = 'superstore_orders' # Nombre de la tabla en la DB
+    __tablename__ = 'sales' # Nombre de la tabla en la DB
     id = Column(Integer, primary_key=True, autoincrement=True)
     order_id = Column(String(50), nullable=False)
     order_date = Column(DateTime)
